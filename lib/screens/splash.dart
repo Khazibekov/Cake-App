@@ -1,5 +1,6 @@
 import 'package:cakeapp/screens/home.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class SplashScreen extends StatelessWidget {
   const SplashScreen({super.key});
@@ -29,11 +30,13 @@ class SplashScreen extends StatelessWidget {
                     text: TextSpan(
                         text: "Find and get \nYour Best ",
 
-                        style: TextStyle(
+                        
+                        style: GoogleFonts.dmSans(
                           fontWeight: FontWeight.bold,
-                          color: Colors.black,
-                          fontFamily: "DMSans",
                           fontSize: 36,
+                          color: Colors.black,
+
+
                         ),
                         children: [
                           TextSpan(

@@ -35,6 +35,7 @@ dependencies:
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.6
+  google_fonts: ^6.2.1
 
 dev_dependencies:
   flutter_test:
@@ -74,14 +75,7 @@ flutter:
   # list giving the asset and other descriptors for the font. For
   # example:
    
-  fonts:
-    - family: DMSans
-      fonts:
-        - asset: assets/fonts/DMSans-Regular.ttf
-        - asset: assets/fonts/DMSans-Bold.ttf
-          weight: 700
-        - asset: assets/fonts/DMSans-Italic.ttf
-          style: italic
+  
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
