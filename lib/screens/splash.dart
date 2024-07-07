@@ -1,4 +1,4 @@
-import 'package:cakeapp/screens/home.dart';
+import 'package:cakeapp/widgets/bottom_navigator_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -67,7 +67,7 @@ class SplashScreen extends StatelessWidget {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                            builder: (context) => HomeBar(),
+                            builder: (context) => BottomNavigatorBarScreen(),
                           ),
                         );
                       },
