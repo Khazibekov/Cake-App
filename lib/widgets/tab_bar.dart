@@ -1,5 +1,5 @@
+import 'package:cakeapp/widgets/items_view.dart';
 import 'package:flutter/material.dart';
-import 'package:cakeapp/constant/constants.dart';
 
 class TabBarScreen extends StatefulWidget {
   const TabBarScreen({super.key});
@@ -10,12 +10,7 @@ class TabBarScreen extends StatefulWidget {
 
 class _TabBarScreenState extends State<TabBarScreen> {
   final _kTabPage = [
-    const Center(
-        child: Text("Cake",
-            style: TextStyle(
-              fontSize: 18,
-              fontWeight: FontWeight.bold,
-            ))),
+    const ItemsViewScreen(),
     const Center(
         child: Text("Donuts",
             style: TextStyle(
@@ -57,7 +52,10 @@ class _TabBarScreenState extends State<TabBarScreen> {
       length: _kTabs.length,
       child: Column(
         children: [
-          TabBar(tabs: _kTabs),
+          TabBar(
+            tabs: _kTabs,
+            dividerColor: Colors.transparent,
+          ),
           Expanded(
             child: TabBarView(children: _kTabPage),
           ),
