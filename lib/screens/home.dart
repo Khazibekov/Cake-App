@@ -18,10 +18,15 @@ class _HomeScreenState extends State<HomeScreen> {
 
   @override
   Widget build(BuildContext context) {
+    
     return Padding(
-      padding: const EdgeInsets.only(left: 20, right: 20, top: 20),
+      
+      padding: cakePadding().screenPadding,
       child: Scaffold(
+        
+        backgroundColor: Colors.white,
         appBar: AppBar(
+          backgroundColor: Colors.transparent,
           leading: ClipRRect(
             borderRadius: BorderRadius.circular(50),
             child: Image.asset("images/image1.png"),
