@@ -18,7 +18,7 @@ class _ItemsViewScreenState extends State<ItemsViewScreen> {
       child: GridView.builder(
         gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
           crossAxisCount: 2,
-          childAspectRatio: 0.8,
+          childAspectRatio: 0.6,
         ),
         itemCount: 4,
         itemBuilder: (BuildContext context, int index) {

@@ -1,8 +1,8 @@
 final cakesImage = [
-  "images/Cake1.png",
-  "images/Cake2.png",
-  "images/Cake3.png",
-  "images/Cake4.png",
+  "assets/images/Cake1.png",
+  "assets/images/Cake2.png",
+  "assets/images/Cake3.png",
+  "assets/images/Cake4.png",
 ];
 
 final description = [

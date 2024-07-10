@@ -13,7 +13,7 @@ class _HomeScreenState extends State<HomeScreen> {
   final TextEditingController _searchController = TextEditingController();
 
   void _performSearch(String query) {
-    print("Aranan kelime: $query");
+    print("$query");
   }
 
   @override
@@ -29,7 +29,7 @@ class _HomeScreenState extends State<HomeScreen> {
           backgroundColor: Colors.transparent,
           leading: ClipRRect(
             borderRadius: BorderRadius.circular(50),
-            child: Image.asset("images/image1.png"),
+            child: Image.asset("assets/images/image1.png"),
           ),
           title: Padding(
             padding: const EdgeInsets.only(left: 10),
@@ -107,13 +107,13 @@ class _HomeScreenState extends State<HomeScreen> {
               ],
             ),
             const Padding(
-              padding: EdgeInsets.only(top: 10),
+              padding: EdgeInsets.only(top: 15,bottom: 15),
               child: Align(
                 alignment: Alignment.centerLeft,
                 child: Text(
                   "Browse By Category",
                   style: TextStyle(
-                    fontSize: 20,
+                    fontSize: 25,
                     fontWeight: FontWeight.bold,
                   ),
                 ),

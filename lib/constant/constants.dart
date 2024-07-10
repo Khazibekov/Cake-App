@@ -12,5 +12,5 @@ class cakeColor {
 
 class cakePadding {
   final screenPadding = EdgeInsets.only(left: 20, right: 20, top: 20);
-  
+  final singleItemPadding = EdgeInsets.only(left: 20, right: 20);
 }

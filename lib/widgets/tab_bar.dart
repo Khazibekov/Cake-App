@@ -1,5 +1,7 @@
+import 'package:cakeapp/constant/constants.dart';
 import 'package:cakeapp/widgets/items_view.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 
 class TabBarScreen extends StatefulWidget {
   const TabBarScreen({super.key});
@@ -26,23 +28,71 @@ class _TabBarScreenState extends State<TabBarScreen> {
   ];
 
   final _kTabs = [
-    const Tab(
-      icon: Icon(
-        Icons.cake,
+    Container(
+      decoration: BoxDecoration(
+          color: cakeColor().selectedColor,
+          borderRadius: BorderRadius.circular(100)),
+      padding: EdgeInsets.symmetric(horizontal: 10),
+      child: Tab(
+        child: Container(
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Icon(
+                Icons.cake_outlined,
+              ),
+              Text(
+                "Cake",
+                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15),
+              ),
+            ],
+          ),
+        ),
       ),
-      text: "Cake",
     ),
-    const Tab(
-      icon: Icon(
-        Icons.donut_small,
+    Container(
+      decoration: BoxDecoration(
+          color: cakeColor().selectedColor,
+          borderRadius: BorderRadius.circular(100)),
+      padding: EdgeInsets.symmetric(horizontal: 1),
+      child: Tab(
+        child: Container(
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Icon(
+                Icons.donut_small_outlined,
+              ),
+              Text(
+                "Donuts",
+                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15),
+              ),
+            ],
+          ),
+        ),
       ),
-      text: "Donuts",
     ),
-    const Tab(
-      icon: Icon(
-        Icons.cookie,
+    Container(
+      decoration: BoxDecoration(
+          color: cakeColor().selectedColor,
+          borderRadius: BorderRadius.circular(100)),
+      padding: EdgeInsets.symmetric(horizontal: 1),
+      child: Tab(
+        child: Container(
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Icon(
+                Icons.cookie_outlined,
+              ),
+              Text(
+                "Cookies",
+                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15),
+              ),
+            ],
+          ),
+        ),
       ),
-      text: "Cookies",
     ),
   ];
 
@@ -55,6 +105,8 @@ class _TabBarScreenState extends State<TabBarScreen> {
           TabBar(
             tabs: _kTabs,
             dividerColor: Colors.transparent,
+            indicatorColor: Colors.transparent,
+            labelColor: Colors.white,
           ),
           Expanded(
             child: TabBarView(children: _kTabPage),
